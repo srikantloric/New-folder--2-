@@ -1,0 +1,36 @@
+name: loric-edu-analytics
+version: 0.0.1 # Follow semver versioning
+specVersion: v1beta # Version of the Firebase Extensions specification
+displayName: LoricEdu
+description: >-
+  Analytics Aggregatior for Loric Edu
+icon: ../../icon.png
+license: Apache-2.0
+sourceUrl: https://github.com/ORG_OR_USER/REPO_NAME
+billingRequired: true
+author:
+  authorName: Your Companyyy
+  email: extensions@example.com
+  url: https://example.com/
+contributors:
+  - authorName: Your Name
+  - authorName: Another Contributor
+    email: colleague@example.net
+    url: https://github.com/their-org/
+resources:
+  - name: onPaymentAdd
+    type: firebaseextensions.v1beta.function
+    properties:
+      eventTrigger:
+        eventType: providers/cloud.firestore/eventTypes/document.create
+        resource: projects/${PROJECT_ID}/databases/(default)/documents/MY_PAYMENTS/{paymentId}
+      entryPoint: onPaymentAdd
+      runtime: nodejs20
+  - name: onPaymentDelete
+    type: firebaseextensions.v1beta.function
+    properties:
+      eventTrigger:
+        eventType: providers/cloud.firestore/eventTypes/document.delete
+        resource: projects/${PROJECT_ID}/databases/(default)/documents/MY_PAYMENTS/{paymentId}
+      entryPoint: onPaymentDelete
+      runtime: nodejs20

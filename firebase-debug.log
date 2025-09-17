@@ -1,0 +1,48 @@
+[debug] [2025-09-17T09:20:16.080Z] ----------------------------------------------------------------------
+[debug] [2025-09-17T09:20:16.083Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\LORIC\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js ext:dev:upload loric-edu-ext/firestore-analytics-aggregator
+[debug] [2025-09-17T09:20:16.083Z] CLI Version:   14.16.0
+[debug] [2025-09-17T09:20:16.083Z] Platform:      win32
+[debug] [2025-09-17T09:20:16.083Z] Node Version:  v20.18.0
+[debug] [2025-09-17T09:20:16.083Z] Time:          Wed Sep 17 2025 14:50:16 GMT+0530 (India Standard Time)
+[debug] [2025-09-17T09:20:16.083Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-09-17T09:20:16.089Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-09-17T09:20:16.089Z] > authorizing via signed-in user (srikantloric@gmail.com)
+[debug] [2025-09-17T09:20:16.090Z] Checked if tokens are valid: true, expires at: 1758104408077
+[debug] [2025-09-17T09:20:16.091Z] Checked if tokens are valid: true, expires at: 1758104408077
+[debug] [2025-09-17T09:20:16.092Z] >>> [apiv2][query] GET https://firebaseextensionspublisher.googleapis.com/v1beta/projects/-/publisherProfile publisherId=loric-edu-ext
+[debug] [2025-09-17T09:20:18.521Z] <<< [apiv2][status] GET https://firebaseextensionspublisher.googleapis.com/v1beta/projects/-/publisherProfile 200
+[debug] [2025-09-17T09:20:18.521Z] <<< [apiv2][body] GET https://firebaseextensionspublisher.googleapis.com/v1beta/projects/-/publisherProfile {"name":"projects/234117864203/publisherProfile","publisherId":"loric-edu-ext","registerTime":"2025-09-17T09:15:41.021370Z","displayName":"loric-edu-ext","state":"ACTIVE"}
+[debug] [2025-09-17T09:20:18.522Z] Checked if tokens are valid: true, expires at: 1758104408077
+[debug] [2025-09-17T09:20:18.522Z] Checked if tokens are valid: true, expires at: 1758104408077
+[debug] [2025-09-17T09:20:18.522Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/234117864203/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2025-09-17T09:20:18.522Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/234117864203/services/cloudresourcemanager.googleapis.com x-goog-quota-user=projects/234117864203
+[debug] [2025-09-17T09:20:20.498Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/234117864203/services/cloudresourcemanager.googleapis.com 200
+[debug] [2025-09-17T09:20:20.498Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/234117864203/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2025-09-17T09:20:20.504Z] Checked if tokens are valid: true, expires at: 1758104408077
+[debug] [2025-09-17T09:20:20.504Z] Checked if tokens are valid: true, expires at: 1758104408077
+[debug] [2025-09-17T09:20:20.504Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/234117864203 [none]
+[debug] [2025-09-17T09:20:22.137Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/234117864203 200
+[debug] [2025-09-17T09:20:22.137Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/234117864203 {"projectNumber":"234117864203","projectId":"loric-edu-ext","lifecycleState":"ACTIVE","name":"loric-edu-ext","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-09-17T09:14:56.093673Z"}
+[debug] [2025-09-17T09:20:22.137Z] Checking if latest publisher TOS has been accepted by 234117864203...
+[debug] [2025-09-17T09:20:22.138Z] Checked if tokens are valid: true, expires at: 1758104408077
+[debug] [2025-09-17T09:20:22.138Z] Checked if tokens are valid: true, expires at: 1758104408077
+[debug] [2025-09-17T09:20:22.138Z] >>> [apiv2][query] GET https://firebaseextensionstos-pa.googleapis.com/v1/projects/234117864203/publishertos [none]
+[debug] [2025-09-17T09:20:23.827Z] <<< [apiv2][status] GET https://firebaseextensionstos-pa.googleapis.com/v1/projects/234117864203/publishertos 200
+[debug] [2025-09-17T09:20:23.827Z] <<< [apiv2][body] GET https://firebaseextensionstos-pa.googleapis.com/v1/projects/234117864203/publishertos {"name":"projects/234117864203/publishertos","latestTosVersion":"v1"}
+[info] To continue, you must accept the Firebase Extensions Publisher Terms of Service: https://firebase.google.com/terms/extensions/publisher
+[debug] [2025-09-17T09:20:26.949Z] Checked if tokens are valid: true, expires at: 1758104408077
+[debug] [2025-09-17T09:20:26.949Z] Checked if tokens are valid: true, expires at: 1758104408077
+[debug] [2025-09-17T09:20:26.949Z] >>> [apiv2][query] POST https://firebaseextensionstos-pa.googleapis.com/v1/projects/234117864203/publishertos:accept [none]
+[debug] [2025-09-17T09:20:26.949Z] >>> [apiv2][body] POST https://firebaseextensionstos-pa.googleapis.com/v1/projects/234117864203/publishertos:accept {"name":"project/234117864203/publishertos","version":"v1"}
+[debug] [2025-09-17T09:20:27.457Z] <<< [apiv2][status] POST https://firebaseextensionstos-pa.googleapis.com/v1/projects/234117864203/publishertos:accept 200
+[debug] [2025-09-17T09:20:27.458Z] <<< [apiv2][body] POST https://firebaseextensionstos-pa.googleapis.com/v1/projects/234117864203/publishertos:accept {"name":"projects/234117864203/publishertos","lastAcceptedVersion":"v1","lastAcceptedTime":"2025-09-17T09:20:28.002780Z","latestTosVersion":"v1"}
+[debug] [2025-09-17T09:20:27.459Z] Checked if tokens are valid: true, expires at: 1758104408077
+[debug] [2025-09-17T09:20:27.459Z] Checked if tokens are valid: true, expires at: 1758104408077
+[debug] [2025-09-17T09:20:27.459Z] >>> [apiv2][query] GET https://firebaseextensionspublisher.googleapis.com/v1beta/publishers/loric-edu-ext/extensions/firestore-analytics-aggregator [none]
+[debug] [2025-09-17T09:20:29.185Z] <<< [apiv2][status] GET https://firebaseextensionspublisher.googleapis.com/v1beta/publishers/loric-edu-ext/extensions/firestore-analytics-aggregator 404
+[debug] [2025-09-17T09:20:29.185Z] <<< [apiv2][body] GET https://firebaseextensionspublisher.googleapis.com/v1beta/publishers/loric-edu-ext/extensions/firestore-analytics-aggregator {"error":{"code":404,"message":"Extension `publishers/loric-edu-ext/extensions/firestore-analytics-aggregator` not found","status":"NOT_FOUND"}}
+[info] 
+Extension: loric-edu-ext/firestore-analytics-aggregator
+State: New
+

@@ -4,7 +4,7 @@ specVersion: v1beta # Version of the Firebase Extensions specification
 displayName: LoricEdu
 description: >-
   Analytics Aggregatior for Loric Edu
-icon: ../../icon.png
+icon: ./icon.png
 license: Apache-2.0
 sourceUrl: https://github.com/ORG_OR_USER/REPO_NAME
 billingRequired: true
